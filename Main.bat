@@ -69,13 +69,13 @@ GOTO Main
 	
 	REM SET direction=None
 	
-	CALL :InsertSquare %sizeOfSquare%, %x%, %y%
-	CALL :GetRender 2>NUL
+	REM CALL :InsertSquare %sizeOfSquare%, %x%, %y%
+	REM CALL :GetRender 2>NUL
 EXIT /B 0
 
 
 :Render
-	REM CLS & CALL :PrintSquare %sizeOfSquare%, %x%, %y% & REM --TEMP--
+	CLS & CALL :PrintSquare %sizeOfSquare%, %x%, %y% & REM --TEMP--
 	
 	REM : Render %VALUES%
 	REM SETLOCAL enableDelayedExpansion
